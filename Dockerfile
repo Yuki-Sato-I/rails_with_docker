@@ -2,7 +2,6 @@ FROM ruby:2.5.1
 LABEL maintainer "Iwate_univ <ifive.o2h5i9@zapiermail.com>"
 LABEL version="1.0"
 
-#インストールしなきゃいけないやつをここに書くこと（まだ未完）
 RUN ["apt-get", "update"]
 RUN ["apt-get", "install", "-y", "nodejs", "build-essential", "postgresql-client"]
 RUN ["gem", "install", "bundler", "-v", "1.17.3"]
